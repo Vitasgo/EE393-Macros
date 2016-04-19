@@ -15,7 +15,7 @@ Sub body()
         ActiveWindow.ActivePane.View.Type = wdPrintView
     End If
     With Selection.PageSetup.TextColumns
-        .SetCount NumColumns:=1
+        .SetCount NumColumns:=2
         .EvenlySpaced = False
         .LineBetween = False
     End With
