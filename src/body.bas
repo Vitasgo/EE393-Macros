@@ -61,34 +61,6 @@ Sub body()
             .NameAscii = ""
         End If
         .NameFarEast = ""
-    End With
-    With ActiveDocument.PageSetup
-        .LineNumbering.Active = False
-        .Orientation = wdOrientPortrait
-        .TopMargin = InchesToPoints(0.75)
-        .BottomMargin = InchesToPoints(0.75)
-        .LeftMargin = InchesToPoints(0.63)
-        .RightMargin = InchesToPoints(0.63)
-        .Gutter = InchesToPoints(0)
-        .HeaderDistance = InchesToPoints(0.5)
-        .FooterDistance = InchesToPoints(0.5)
-        .PageWidth = InchesToPoints(8.5)
-        .PageHeight = InchesToPoints(11)
-        .FirstPageTray = wdPrinterDefaultBin
-        .OtherPagesTray = wdPrinterDefaultBin
-        .SectionStart = wdSectionNewPage
-        .OddAndEvenPagesHeaderFooter = False
-        .DifferentFirstPageHeaderFooter = False
-        .VerticalAlignment = wdAlignVerticalTop
-        .SuppressEndnotes = False
-        .MirrorMargins = False
-        .TwoPagesOnOne = False
-        .BookFoldPrinting = False
-        .BookFoldRevPrinting = False
-        .BookFoldPrintingSheets = 1
-        .GutterPos = wdGutterPosLeft
-        .LayoutMode = wdLayoutModeDefault
-    End With
     Selection.ParagraphFormat.Alignment = wdAlignParagraphLeft
     Selection.ParagraphFormat.Alignment = wdAlignParagraphLeft
 End Sub
